@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public Transform cam;
+    public GameObject cam;
     public GameObject HealthBar;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Update() 
     {
-        transform.LookAt(cam);    
+        transform.LookAt(cam.transform);    
     }
     // Update is called once per frame
 }

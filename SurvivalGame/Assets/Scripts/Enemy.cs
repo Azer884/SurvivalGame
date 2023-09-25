@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using Unity.Netcode;
 
-public class Enemy : MonoBehaviour
+public class Enemy : NetworkBehaviour
 {
     public float maxHealth = 50;
 
@@ -17,13 +18,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (HealthBar.activeSelf)
-        {
 
-        }
     }
     public void TakeDamage(float damage)
     {
+        if (!IsOwner) return;
         HealthBar.SetActive(true);
         currentHealth -= damage;
         if (currentHealth <= 0)
