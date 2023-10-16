@@ -10,8 +10,6 @@ public class MeleeSystem : MonoBehaviour
     public float AttackRate = 2f;
     public Animator Anim;
     public Enemy PlayerHealth;
-    public string Hitting = "HittingAnim";
-
     private void Start()
     {
 
@@ -25,8 +23,8 @@ public class MeleeSystem : MonoBehaviour
             {
                 if (PlayerHealth.currentHealth > 20f)
                 {
+                    Anim.SetTrigger("Hit");
                     Attack();
-                    Anim.Play(Hitting);
                 }
                 else
                 {

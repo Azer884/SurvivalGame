@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6650391936787440521}
   - component: {fileID: 7846722673359743515}
   - component: {fileID: 1331506499647113818}
+  - component: {fileID: -998073413239531430}
   m_Layer: 0
   m_Name: Grill
   m_TagString: Untagged
@@ -28,14 +29,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282662025620109041}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.8182268, y: -0.675, z: -3.5554373}
-  m_LocalScale: {x: 1, y: 1, z: 1.57}
+  m_LocalScale: {x: 0.74367, y: 0.74367, z: 1.1675619}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5832710631953962973}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &6987250376944275043
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -128,6 +129,20 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &-998073413239531430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282662025620109041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af1849ec4f52c94c83781dd39b4a8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Grill
+  PlayerRange: 0
 --- !u!1 &1683390351602411986
 GameObject:
   m_ObjectHideFlags: 0

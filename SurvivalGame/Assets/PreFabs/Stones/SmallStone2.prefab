@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7522024145009665436}
   - component: {fileID: 5614083193351082940}
   - component: {fileID: 1977489269431466100}
+  - component: {fileID: -3889028295604786159}
+  - component: {fileID: 2209452696494892725}
+  - component: {fileID: -5221262418878648968}
   m_Layer: 0
   m_Name: SmallStone2
   m_TagString: Untagged
@@ -26,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2820729561539952047}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.386, z: 0}
   m_LocalScale: {x: 0.6394501, y: 0.6394501, z: 0.6394501}
   m_ConstrainProportionsScale: 0
@@ -83,3 +86,59 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-3889028295604786159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2820729561539952047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af1849ec4f52c94c83781dd39b4a8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Stone (E)
+  PlayerRange: 0
+--- !u!65 &2209452696494892725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2820729561539952047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.50958407, y: 0.25721997, z: 0.48054302}
+  m_Center: {x: 1.7084119, y: 0.332194, z: 0.7545175}
+--- !u!65 &-5221262418878648968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2820729561539952047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 2, z: 5}
+  m_Center: {x: 1.7084119, y: 0.332194, z: 0.7545175}

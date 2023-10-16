@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4535135591412631911}
   - component: {fileID: 3332291254844004056}
   - component: {fileID: 837361565588417869}
+  - component: {fileID: 4343718573522377958}
   m_Layer: 0
   m_Name: CraftingTable
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7903575131255037445}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000037748936, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0021637, y: -0.663, z: -4.04}
   m_LocalScale: {x: 3.8133616, y: 3.8133616, z: 3.8133616}
   m_ConstrainProportionsScale: 0
@@ -105,3 +106,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3407009, y: 0.3564455, z: 0.3502719}
   m_Center: {x: -0.0018101484, y: -0.00036834925, z: 0.0019921511}
+--- !u!114 &4343718573522377958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903575131255037445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af1849ec4f52c94c83781dd39b4a8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Crafting Station
+  PlayerRange: 0
