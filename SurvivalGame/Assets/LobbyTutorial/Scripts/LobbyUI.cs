@@ -93,6 +93,7 @@ public class LobbyUI : MonoBehaviour {
         }
 
         changeGameModeButton.gameObject.SetActive(LobbyManager.Instance.IsLobbyHost());
+        startGameButton.gameObject.SetActive(LobbyManager.Instance.IsLobbyHost());
 
         lobbyNameText.text = lobby.Name;
         playerCountText.text = lobby.Players.Count + "/" + lobby.MaxPlayers;
@@ -108,7 +109,7 @@ public class LobbyUI : MonoBehaviour {
         }
     }
 
-    private void Hide() {
+    public void Hide() {
         gameObject.SetActive(false);
     }
 

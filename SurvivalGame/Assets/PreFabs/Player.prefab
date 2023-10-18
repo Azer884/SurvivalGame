@@ -8852,6 +8852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 843754968576843342}
+  Cam2: {fileID: 0}
+  Lobby: {fileID: 2614507848308759485, guid: 4f9efb772d1104548993cc044054b58c, type: 3}
   GroundCheck: {fileID: 4270652585765129857}
   MeleeSP: {fileID: 4394542342388353646}
   Model: {fileID: 5626461360069377053}

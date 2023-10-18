@@ -1,7 +1,7 @@
 Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-15
---target=X64_SSE2
+--target=AVX2
 --global-safety-checks-setting=Off
 --meta-data-generation=False
 --dump=Function
@@ -30,6 +30,7 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=System.Transactions;
 --assembly-defines=System.Xml;
 --assembly-defines=System.Xml.Linq;
+--assembly-defines=unity-websocket-sharp;
 --assembly-defines=Unity.AI.Navigation;
 --assembly-defines=Unity.Animation.Rigging;
 --assembly-defines=Unity.Animation.Rigging.DocCodeExamples;
@@ -75,8 +76,10 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=Unity.Services.Core.Scheduler;
 --assembly-defines=Unity.Services.Core.Telemetry;
 --assembly-defines=Unity.Services.Core.Threading;
+--assembly-defines=Unity.Services.Lobbies;
 --assembly-defines=Unity.Services.QoS;
 --assembly-defines=Unity.Services.Relay;
+--assembly-defines=Unity.Services.Wire.Internal;
 --assembly-defines=Unity.Splines;
 --assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.Timeline;
@@ -86,6 +89,7 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.VisualScripting.State;
 --assembly-defines=UnityEngine;
+--assembly-defines=websocket-sharp;
 --linker-options=PdbAltPath="SURVIVAL_GAME_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\Burst
@@ -191,7 +195,7 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --method=Unity.Networking.Transport.FragmentationPipelineStage, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Send(Unity.Networking.Transport.NetworkPipelineContext&, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Networking.Transport.InboundSendBuffer&, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Networking.Transport.NetworkPipelineStage+Requests&, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--3134d6572ef8ceff1d5057c9272f12fe
 --platform=Windows
 --backend=burst-llvm-15
---target=AVX2
+--target=X64_SSE2
 --global-safety-checks-setting=Off
 --meta-data-generation=False
 --dump=Function
@@ -220,6 +224,7 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=System.Transactions;
 --assembly-defines=System.Xml;
 --assembly-defines=System.Xml.Linq;
+--assembly-defines=unity-websocket-sharp;
 --assembly-defines=Unity.AI.Navigation;
 --assembly-defines=Unity.Animation.Rigging;
 --assembly-defines=Unity.Animation.Rigging.DocCodeExamples;
@@ -265,8 +270,10 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=Unity.Services.Core.Scheduler;
 --assembly-defines=Unity.Services.Core.Telemetry;
 --assembly-defines=Unity.Services.Core.Threading;
+--assembly-defines=Unity.Services.Lobbies;
 --assembly-defines=Unity.Services.QoS;
 --assembly-defines=Unity.Services.Relay;
+--assembly-defines=Unity.Services.Wire.Internal;
 --assembly-defines=Unity.Splines;
 --assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.Timeline;
@@ -276,6 +283,7 @@ Library: C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\BurstOut
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.VisualScripting.State;
 --assembly-defines=UnityEngine;
+--assembly-defines=websocket-sharp;
 --linker-options=PdbAltPath="SURVIVAL_GAME_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\azerh\Documents\GitHub\SurvivalGame\SurvivalGame\Temp\Burst
