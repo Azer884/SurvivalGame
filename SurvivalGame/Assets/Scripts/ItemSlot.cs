@@ -7,36 +7,13 @@ using UnityEngine.EventSystems;
  
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
- 
-    public GameObject Item
-    {
-        get
-        {
-            if (transform.childCount > 0 )
-            {
-                return transform.GetChild(0).gameObject;
-            }
- 
-            return null;
-        }
-    }
- 
- 
- 
- 
- 
- 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("OnDrop");
- 
-        //if there is not item already then set our item.
-        if (!Item)
+        if (transform.childCount == 0)
         {
- 
-            DragDrop.itemBeingDragged.transform.SetParent(transform);
-            DragDrop.itemBeingDragged.transform.localPosition = new Vector2(0, 0);
- 
+            GameObject dropped = eventData.pointerDrag;
+            DragDrop draggableItem = dropped.GetComponent<DragDrop>();
+            draggableItem.parentAfterDrag = transform;
         }
  
  

@@ -7,63 +7,28 @@ using UnityEngine.UI;
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
  
-    public Canvas canvas;
-    private RectTransform rectTransform;
-    private CanvasGroup canvasGroup;
- 
-    public static GameObject itemBeingDragged;
-    Vector3 startPosition;
-    Transform startParent;
- 
- 
- 
-    private void Awake()
-    {
-        
-        rectTransform = gameObject.GetComponent<RectTransform>();
-        canvasGroup = gameObject.GetComponent<CanvasGroup>();
- 
-    }
- 
- 
+    public Image image;
+    [HideInInspector] public Transform parentAfterDrag;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
- 
-        Debug.Log("OnBeginDrag");
-        canvasGroup.alpha = .6f;
-        //So the ray cast will ignore the item itself.
-        canvasGroup.blocksRaycasts = false;
-        startPosition = transform.position;
-        startParent = transform.parent;
+        parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
-        itemBeingDragged = gameObject;
- 
+        transform.SetAsLastSibling();
+        image.raycastTarget = false;
     }
  
     public void OnDrag(PointerEventData eventData)
     {
-        //So the item will move with our mouse (at same speed)  and so it will be consistant if the canvas has a different scale (other then 1);
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
- 
+        transform.position = Input.mousePosition;
     }
  
  
  
     public void OnEndDrag(PointerEventData eventData)
     {
- 
-        itemBeingDragged = null;
- 
-        if (transform.parent == startParent || transform.parent == transform.root)
-        {
-            transform.position = startPosition;
-            transform.SetParent(startParent);
- 
-        }
- 
-        Debug.Log("OnEndDrag");
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+        transform.SetParent(parentAfterDrag);
+        image.raycastTarget = true;
     }
  
  
