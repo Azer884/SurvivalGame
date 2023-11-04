@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6916489567348328781}
   - component: {fileID: 3431213386850933697}
   - component: {fileID: 5544208937293119480}
-  - component: {fileID: 7190080307019011545}
   - component: {fileID: 6053180202061752364}
+  - component: {fileID: 2216687228081920301}
   m_Layer: 5
   m_Name: CryofrostAxe_UI
   m_TagString: Untagged
@@ -77,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7190080307019011545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508130604411065438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7111fc851cf36d14ebb0960b4a2099b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!225 &6053180202061752364
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102,3 +89,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2216687228081920301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508130604411065438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617625dbf72dfce4eb6257db18ddcd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

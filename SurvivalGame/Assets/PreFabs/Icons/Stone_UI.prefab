@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3648397298329360166}
   - component: {fileID: 5712580873143847600}
   - component: {fileID: 1968872700652734804}
-  - component: {fileID: 2563457614273537497}
   - component: {fileID: 4663816154224919072}
+  - component: {fileID: 3860780855700085344}
   m_Layer: 5
   m_Name: Stone_UI
   m_TagString: Untagged
@@ -77,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2563457614273537497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8739596474186585698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7111fc851cf36d14ebb0960b4a2099b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!225 &4663816154224919072
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102,3 +89,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3860780855700085344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739596474186585698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617625dbf72dfce4eb6257db18ddcd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

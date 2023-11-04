@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7185753684696475632}
   - component: {fileID: 7687261882065266093}
   - component: {fileID: 1207947938864556792}
-  - component: {fileID: 6656766842395152328}
   - component: {fileID: 1443906915820015318}
+  - component: {fileID: 7506991226126667798}
   m_Layer: 5
   m_Name: CopperAxe_UI
   m_TagString: Untagged
@@ -77,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6656766842395152328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4908857087194292348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7111fc851cf36d14ebb0960b4a2099b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!225 &1443906915820015318
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102,3 +89,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7506991226126667798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908857087194292348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617625dbf72dfce4eb6257db18ddcd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

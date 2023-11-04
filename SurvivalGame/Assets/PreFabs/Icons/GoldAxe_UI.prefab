@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8028171536604048488}
   - component: {fileID: 454972590308329497}
   - component: {fileID: 9088558651960865418}
-  - component: {fileID: 5986875505205126901}
   - component: {fileID: 4150318075378927921}
+  - component: {fileID: 31054424363323496}
   m_Layer: 5
   m_Name: GoldAxe_UI
   m_TagString: Untagged
@@ -77,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5986875505205126901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7940102665980103041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7111fc851cf36d14ebb0960b4a2099b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!225 &4150318075378927921
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102,3 +89,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &31054424363323496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940102665980103041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617625dbf72dfce4eb6257db18ddcd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

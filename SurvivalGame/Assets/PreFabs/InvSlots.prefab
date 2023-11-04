@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5660487953029380814}
   - component: {fileID: 6393326942270562428}
   - component: {fileID: 8063877752778945846}
-  - component: {fileID: 1626971001151104193}
   - component: {fileID: 6020300790829250554}
+  - component: {fileID: 4256671729164436343}
   m_Layer: 5
   m_Name: InvSlots
   m_TagString: Untagged
@@ -77,18 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1626971001151104193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8516812663042300377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3334bcd75a7be64468e1c41a857efc73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6020300790829250554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,3 +101,16 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &4256671729164436343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516812663042300377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba05cc89b330a1e48a4307556567ba3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 0
