@@ -11,6 +11,8 @@ public class LocalPlayerCheck : NetworkBehaviour
     public GameObject Short;
     public GameObject Shirt;
     public GameObject Bones;
+    public GameObject Name;
+
     void Start()
     {
 
@@ -22,6 +24,7 @@ public class LocalPlayerCheck : NetworkBehaviour
         }
         else 
         {
+            Name.SetActive(false);
             Model.SetActive(false);
             Short.SetActive(false);
             Shirt.SetActive(false);

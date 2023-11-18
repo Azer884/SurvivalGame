@@ -5,10 +5,10 @@ using TMPro;
 
 public class NameTag : MonoBehaviour
 {
-    public string playerName;
+    [SerializeField] TextMeshProUGUI playerName;
     void Awake()
     {
-        playerName = EditPlayerName.Instance.playerName;
+        playerName.text = EditPlayerName.Instance.playerName;
     }
 
 }
