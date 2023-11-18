@@ -9,6 +9,7 @@ public class InventorySystem : MonoBehaviour
    public static InventorySystem Instance { get; set; }
  
     public GameObject inventoryScreenUI;
+    public GameObject inventoryHotBarUI;
     public bool isOpen;
  
  
@@ -39,6 +40,7 @@ public class InventorySystem : MonoBehaviour
  
 			Debug.Log("i is pressed");
             inventoryScreenUI.SetActive(true);
+            inventoryHotBarUI.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             isOpen = true;
  
@@ -46,6 +48,7 @@ public class InventorySystem : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Tab) && isOpen)
         {
             inventoryScreenUI.SetActive(false);
+            inventoryHotBarUI.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             isOpen = false;
         }
