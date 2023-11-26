@@ -10,6 +10,7 @@ public class MeleeSystem : MonoBehaviour
     public float AttackRate = 2f;
     public Animator Anim;
     public Enemy PlayerHealth;
+    public bool AnimHit;
     private void Start()
     {
 
@@ -25,12 +26,14 @@ public class MeleeSystem : MonoBehaviour
                 {
                     Anim.SetTrigger("Hit");
                     Attack();
+                    AnimHit = true;
                 }
                 else
                 {
                     Debug.Log("Broo do u wanna die");
                 }
                 nextAttackTime = Time.time + 1f / AttackRate ;
+                AnimHit = false;
             }
         }
     }

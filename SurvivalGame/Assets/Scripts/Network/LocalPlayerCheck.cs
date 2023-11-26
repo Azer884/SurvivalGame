@@ -8,9 +8,6 @@ public class LocalPlayerCheck : NetworkBehaviour
     public GameObject GroundCheck;
     public GameObject MeleeSP;
     public GameObject Model;
-    public GameObject Short;
-    public GameObject Shirt;
-    public GameObject Bones;
     public GameObject Name;
 
     void Start()
@@ -26,9 +23,6 @@ public class LocalPlayerCheck : NetworkBehaviour
         {
             Name.SetActive(false);
             Model.SetActive(false);
-            Short.SetActive(false);
-            Shirt.SetActive(false);
-            Bones.SetActive(false);
         }
     }
 }
