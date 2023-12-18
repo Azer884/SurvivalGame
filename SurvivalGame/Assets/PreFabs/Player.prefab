@@ -1884,7 +1884,8 @@ MonoBehaviour:
   attackDamage: 10
   nextAttackTime: 0
   AttackRate: 1
-  Anim: {fileID: 2545625536916246376}
+  FirstpAnim: {fileID: 3374342348960785451}
+  ThirdpAnim: {fileID: 1942412844953309638}
   PlayerHealth: {fileID: 2076354394697681469}
   AnimHit: 0
 --- !u!95 &2545625536916246376
@@ -8043,7 +8044,6 @@ GameObject:
   - component: {fileID: 206248290346006933}
   - component: {fileID: 3821172157268847724}
   - component: {fileID: 3519859271418220678}
-  - component: {fileID: 8324134539058974295}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -8126,7 +8126,6 @@ MonoBehaviour:
   SprintUsage: 1
   JumpUsage: 1
   JumpAnim: {fileID: 1942412844953309638}
-  JumpAnimation: {fileID: 0}
 --- !u!114 &2076354394697681469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8209,19 +8208,6 @@ MonoBehaviour:
   MeleeSP: {fileID: 4394542342388353646}
   Model: {fileID: 5164407858560847552}
   Name: {fileID: 463382516095666820}
---- !u!114 &8324134539058974295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9044349510947384698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb6b943225f56b4e8549e9c7fefadc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1942412844953309638}
 --- !u!1 &9083226428202232528
 GameObject:
   m_ObjectHideFlags: 0
@@ -11360,6 +11346,11 @@ PrefabInstance:
 --- !u!95 &1942412844953309638 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5997411285152070882, guid: eb2fb255d4bc28745ab075e655a634c8, type: 3}
+  m_PrefabInstance: {fileID: 5318685159865806116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3374342348960785451 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7429762375909902607, guid: eb2fb255d4bc28745ab075e655a634c8, type: 3}
   m_PrefabInstance: {fileID: 5318685159865806116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5164407858560847552 stripped

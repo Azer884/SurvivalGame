@@ -18,7 +18,6 @@ public class Movement : NetworkBehaviour
     public float SprintUsage = 2f;
     public float JumpUsage = 5f;
     public Animator JumpAnim ;
-    public Animator JumpAnimation ;
 
     // Start is called before the first frame update
     void Start()
@@ -64,8 +63,7 @@ public class Movement : NetworkBehaviour
         {
             velocity.y = -2f;
             Isjummping = false;
-            JumpAnim.SetBool("IsGrounded" , true);
-            JumpAnimation.SetBool("IsGrounded" , true);  
+            JumpAnim.SetBool("IsGrounded" , true); 
         }
 
         if (Input.GetButtonDown("Jump") && !Isjummping)
@@ -87,6 +85,7 @@ public class Movement : NetworkBehaviour
             {
                 Isjummping = true ;
             }
+            
         }
     }
 }
