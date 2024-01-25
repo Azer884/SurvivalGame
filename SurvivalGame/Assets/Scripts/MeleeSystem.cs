@@ -23,7 +23,7 @@ public class MeleeSystem : MonoBehaviour
             {
                 if (PlayerHealth.currentHealth > 20f)
                 {
-                    Anim.SetTrigger("Hit");
+                    Anim.SetTrigger("hit");
                     Attack();
                 }
                 else

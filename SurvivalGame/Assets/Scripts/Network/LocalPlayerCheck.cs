@@ -18,11 +18,17 @@ public class LocalPlayerCheck : NetworkBehaviour
             Cam.SetActive(false);
             MeleeSP.SetActive(false);
             GroundCheck.SetActive(false);
+            ChangeLayerRecursively(Model, 0);
+            ChangeLayerRecursively(Name, 0);
         }
-        else 
+    }
+    void ChangeLayerRecursively(GameObject currentGameObject, int newLayer)
+    {
+        currentGameObject.layer = newLayer;
+
+        foreach (Transform child in currentGameObject.transform)
         {
-            Name.SetActive(false);
-            Model.SetActive(false);
+            ChangeLayerRecursively(child.gameObject, newLayer);
         }
     }
 }

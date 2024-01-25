@@ -1,7 +1,6 @@
 using UnityEngine;
-using Unity.Netcode;
 
-public class Movement : NetworkBehaviour
+public class Movement : MonoBehaviour
 {
     public CharacterController controller ;
     public float speed = 10f;
@@ -19,16 +18,10 @@ public class Movement : NetworkBehaviour
     public float JumpUsage = 5f;
     public Animator JumpAnim ;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner) return;
+        
 
         IsGrounded = Physics.CheckSphere(GroundCheck.position , groundDistance , GroundMask );
 
@@ -49,7 +42,7 @@ public class Movement : NetworkBehaviour
                 }
                 else
                 {
-                    Debug.Log("U r to low of HP");
+                    Debug.Log("U r to low HP");
                 }
             }
         }
